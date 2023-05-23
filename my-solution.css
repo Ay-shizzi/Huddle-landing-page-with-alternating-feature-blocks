@@ -1,0 +1,283 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.home{
+    background: hsl(193, 100%, 96%) url(./images/bg-hero-desktop.svg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.navbar img{
+    height: 30px;
+}
+.navbar button{
+    border: none;
+    outline: none;
+    background: hsl(0, 0%, 100%);
+    padding: 10px 35px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 8px hsla(0, 0%, 0%, 0.3);
+    cursor: pointer;
+}
+.navbar button:hover{
+    box-shadow: 0px 0px 12px hsla(0, 0%, 100%, 0.5);
+}
+.community{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 40px;
+}
+.community_text h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.community_text p{
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 400;
+}
+.community_text button{
+    border: none;
+    outline: none;
+    padding: 20px 50px;
+    border-radius: 40px;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 1px 4px 8px hsla(0, 0%, 0%, 0.3);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.community_text button:hover{
+    background-color: hsl(322, 100%, 77%);
+    box-shadow: 0px 0px 12px hsla(322, 100%, 66%, 0.5);
+}
+.community_illustration img{
+    width: 580px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px 100px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 12px hsla(0, 0%, 0%, 0.2);
+    border-radius: 15px;
+    padding: 30px 20px 30px 80px;
+}
+.card_text h2{
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+.card_text p{
+    font-size: 14px;
+}
+.illustration{
+    height: 250px;
+}
+.build{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin: 0 280px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 12px hsla(0, 0%, 0%, 0.2);
+    border-radius: 10px;
+    padding: 40px 20px;
+    top: 65px;
+}
+.build h1{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.build button{
+    border: none;
+    outline: none;
+    padding: 25px 100px;
+    border-radius: 40px;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 1px 4px 8px hsla(0, 0%, 0%, 0.3);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.build button:hover{
+    background-color: hsl(322, 100%, 77%);
+    box-shadow: 0px 0px 12px hsla(322, 100%, 66%, 0.5);
+}
+.information{
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(0, 0%, 100%);
+    padding: 100px;
+}
+.information img{
+    filter:brightness(0) invert(1);
+    height:30px;
+}
+.information_details{
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+    line-height: 2;
+}
+.contact_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+.menu_info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.copyright{
+    display: flex;
+    justify-content: end;
+}
+.info{
+    cursor: pointer;
+}
+.info:hover{
+    text-decoration: underline;
+}
+.fa-brands{
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    color: hsl(322, 100%, 66%);
+    border: 2px solid hsl(322, 100%, 66%);
+}
+@media screen and (max-width:1114px){
+    .community_text h1{
+        font-size: 26px;
+    }
+    .community_text p{
+        font-size: 14px;
+    }
+    .community_illustration img{
+        width: 400px;
+    }
+    .card{
+        gap: 60px;
+        margin: 20px 80px;
+        padding: 20px 10px 20px 60px;
+    }
+    .card_text p{
+        font-size: 12px;
+    }
+    .illustration{
+        height: 180px;
+    }
+    .build{
+        margin: 0 250px;
+    }
+    .build h1{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .build button{
+        padding: 18px 70px;
+    }
+    .information{
+        padding: 100px 40px;
+    }
+    .information_details{
+        gap: 25px;
+    }
+}
+@media screen and (max-width:860px){
+    .navbar img{
+        height: 20px;
+    }
+    .community{
+        flex-direction: column;
+        text-align: center;
+    }
+    .community_text button{
+        margin: 30px 0;
+        width: 60%;
+    }
+    .card{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 10px;
+        margin: 30px;
+    }
+    .card_text{
+        order: 1;
+    }
+    .build{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .information img{
+        height:20px;
+    }
+    .information{
+        padding: 100px 25px;
+    }
+    .information_details{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact_info{
+        margin-bottom: 30px;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    .copyright{
+        justify-content: center;
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width:460px){
+    .navbar{
+        padding: 40px 20px;
+    }
+    .navbar button{
+        padding: 5px 25px;
+    }
+    .community_text button{
+        width: auto;
+    }
+    .community_illustration img{
+        width: 300px;
+    }
+    .build{
+        width: 95%;
+    }
+    .information_details{
+        font-size: 11px;
+    }
+    .contact_info{
+        display: contents;
+    }
+}
